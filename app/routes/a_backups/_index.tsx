@@ -103,7 +103,7 @@ export default function Index() {
           <ul className=" flex flex-col gap-y-4  ">
             {aMovies.map((movie) => (
               // <div className="rounded-lg  p-2  bg-slate-400 w-18  h-fit" key={movie.myId}>
-              <div className={`rounded-lg  pl-2 pt-2 w-18  h-fit  ${commonMoviesIds.includes(movie.myId) ? 'bg-green-200' : 'bg-slate-300'} `} key={movie.myId}>
+              <div className={`rounded-lg  p-2 w-18  h-fit  ${commonMoviesIds.includes(movie.myId) ? 'bg-green-200' : 'bg-slate-300'} `} key={movie.myId}>
                 <button onClick={() => expandMe(movie.myId)}>
                   <li key={movie.myId}>{movie.name}</li>
                 </button>
